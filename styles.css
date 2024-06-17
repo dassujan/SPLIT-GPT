@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: crimson;
+}
+
+textarea {
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+}
+
+.instructions {
+  color: darkblue;
+  font-weight: bold;
+  text-align: center;
+}
+
+.red-text {
+  color: red;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.chunk {
+  color: red;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.footer {
+  text-align: center;
+  color: darkblue;
+}
+
+.marquee {
+  text-align: center;
+  color: black;
+}

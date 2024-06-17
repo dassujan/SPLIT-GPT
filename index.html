@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SPLIT-GPT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SegmentGPT to split your paragraph into smaller chunks">
+    <meta name="keywords" content="chatgpt, gpt, ai, splitter, splitGPT">
+    <meta name="author" content="Sujan Das">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1><img src="icon.png" alt="logo" />SPLIT-GPT</h1>
+        <form>
+            <label for="paragraph">
+                <h2>Enter Paragraph:</h2>
+            </label>
+            <textarea id="paragraph" name="paragraph"></textarea>
+            <div class="button-container">
+                <!-- <button type="button" onclick="splitParagraph()">Split Paragraph</button> -->
+                <button type="button" class="btn btn-outline-dark" onclick="splitParagraph()">Split Paragraph</button>
+            </div>
+            <div class="instructions">
+                <p><strong>First COPY all the lines given below (in red colour) before sending your paragraph
+                        chunks---></strong></p>
+                <p class="red-text"><strong>The content I want to send is too lengthy to be sent in a single message.
+                        Therefore, I will send it in parts using this format: [START PART 1/10] This is the content of
+                        part 1 of 10 [END PART 1/10]. After receiving each part, please confirm by replying: Received
+                        part 1/10. Once I send all parts and indicate ALL PARTS SENT, you can proceed with processing
+                        the entire content and addressing my requests. Note: I will not write START[1/10] etc., so
+                        assume each part is numbered in ascending order. Confirm receipt of each part without processing
+                        any part until all parts are sent.</strong></p>
+            </div>
+
+        </form>
+        <div id="log" class="instructions">
+            <p><strong>Then, sending your paragraph from the below chunks---></strong></p>
+        </div>
+        <div id="output" class="container"></div>
+    </div>
+    <div class="footer">
+        <p><b>COPY & PASTE the line given below (in red colour) at LAST after sending all your chunks ---></b></p>
+        <p class="red-text"><strong>ALL PART SENT! You can now proceed with processing the request.</strong></p>
+    </div>
+    <div class="marquee">
+        <marquee>Crafted by Sujan Das <span style="color: black;">&hearts;</span></marquee>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
